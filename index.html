@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="asset/favicon.png" type="image/png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFWL7BKD14"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WFWL7BKD14');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="time">
+            <!-- for time/clock -->
+            <div class="circle" style="--clr: #ff2972">
+                <div class="dots hr_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="hh"></circle>
+                </svg>
+                <div id="hours"></div>
+            </div>
+            <div class="circle" style="--clr: #fee800">
+                <div class="dots min_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm"></circle>
+                </svg>
+                <div id="minutes"></div>
+            </div>
+            <div class="circle" style="--clr: #04fc43">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <div id="seconds"></div>
+            </div>
+            <div class="ap">
+                <div id="ampm"></div>
+            </div>
+        </div>
+
+        <!-- for date -->
+        <div class="body">
+            <div class="clock">
+                <div class="inside">
+                    <div class="content">
+                        <p class="days">
+                            <span id="sun">SUN</span>&nbsp;
+                            <span id="mon">MON</span>&nbsp;
+                            <span id="tue">TUE</span>&nbsp;
+                            <span id="wed">WED</span>&nbsp;
+                            <span id="thu">THU</span>&nbsp;
+                            <span id="fri">FRI</span>&nbsp;
+                            <span id="sat">SAT</span>&nbsp;
+                        </p>
+                        <p id="date">
+                            <span id="cal">
+                                <!-- <img src="img.png" alt="cal"> -->
+                                <img src="asset/img2.png" alt="cal">
+                            </span>
+                            <span id="dates"></span>
+                            <span id="month"></span>
+                            <span id="year"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
